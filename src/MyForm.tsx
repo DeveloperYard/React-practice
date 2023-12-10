@@ -38,7 +38,7 @@ function MyForm({onSubmit}: MyFormProps) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input name="name" value={name} onChange={onChange} />
+      <input name="name" value={name} onChange={onChange} ref={inputRef}/>
       <input name="description" value={description} onChange={onChange}/>
       <button type="submit">등록</button>
     </form>
